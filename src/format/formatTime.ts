@@ -4,7 +4,10 @@
   @param format 时间格式，如YYYY-MM-DD hh:mm:ss
   @returns 返回格式化后的时间字符串
 */
-function formatTime(timestamp: number, format = 'YYYY-MM-DD hh:mm:ss'): string {
+export function formatTime(
+  timestamp: number,
+  format = 'YYYY-MM-DD hh:mm:ss',
+): string {
   const date = new Date(timestamp);
   const year = date.getFullYear();
   const month = ('0' + (date.getMonth() + 1)).slice(-2);
@@ -22,5 +25,3 @@ function formatTime(timestamp: number, format = 'YYYY-MM-DD hh:mm:ss'): string {
   };
   return format.replace(/YYYY|MM|DD|hh|mm|ss/g, (matched) => map[matched]);
 }
-
-export default { formatTime };

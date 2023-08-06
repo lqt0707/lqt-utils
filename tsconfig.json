@@ -10,6 +10,7 @@
       "@@/*": [".dumi/tmp/*"],
       "lqt-utils": ["src"],
       "lqt-utils/*": ["src/*", "*"]
-    }
+    },
+    "allowJs": true
   }
 }

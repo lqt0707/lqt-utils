@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import formatTime from '../index';
+import { formatTime } from '../formatTime';
 
 const App: React.FC = () => {
   const [currentDate, setCurrentDate] = useState(

@@ -1,6 +1,7 @@
 export function uuid(len, radi) {
   let radix = radi;
-  let chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
+  let chars =
+    '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
   let uuid = [],
     i;
   radix = radix || chars.length;

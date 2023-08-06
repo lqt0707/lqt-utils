@@ -40,7 +40,16 @@ export function getDayHourMinute(faultDate, completeTime) {
   let seconds = Math.round(leave3 / 1000);
   let leave4 = leave3 % (60 * 1000); //计算分钟数后剩余的毫秒数
   let minseconds = Math.round(leave4 / 1000);
-  let time = '耗时：' + days + ' 天 ' + hours + ' 小时 ' + minutes + ' 分钟 ' + seconds + ' 秒 ';
+  let time =
+    '耗时：' +
+    days +
+    ' 天 ' +
+    hours +
+    ' 小时 ' +
+    minutes +
+    ' 分钟 ' +
+    seconds +
+    ' 秒 ';
   // +
   // minseconds +
   // '毫秒';

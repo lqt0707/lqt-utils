@@ -1,5 +1,5 @@
 // src/formatTime/__tests__/index.test.tsx
-import formatTime from '../index';
+import { formatTime } from '../formatTime';
 
 describe('formatTime', () => {
   it('正确格式化指定时间', () => {
